@@ -9,17 +9,25 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
 #
+#default: &default
+#  adapter: mysql2
+#  encoding: utf8
+#  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#  username: root
+#  password: password
+#  socket: /var/run/mysqld/mysqld.sock
+
 default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password: password
-  socket: /var/run/mysqld/mysqld.sock
+  username: b604479bf1d960
+  password: 4420b94c
+  host: us-cdbr-iron-east-05.cleardb.net
 
 development:
   <<: *default
-  database: housing_development
+  database: heroku_e865d7843dc53eb
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +57,10 @@ test:
 #
 production:
   <<: *default
-  database: housing_production
-  username: housing
-  password: password
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: b604479bf1d960
+  password: 4420b94c
+  host: us-cdbr-iron-east-05.cleardb.net
+  database: heroku_e865d7843dc53eb

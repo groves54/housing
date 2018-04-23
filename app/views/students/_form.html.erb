@@ -1,0 +1,112 @@
+<%= form_with(model: student, local: true) do |form| %>
+  <% if student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+      <% student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :studentId %>
+    <%= form.number_field :studentId, id: :student_studentId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentFname %>
+    <%= form.text_field :studentFname, id: :student_studentFname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentLname %>
+    <%= form.text_field :studentLname, id: :student_studentLname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentStreet %>
+    <%= form.text_field :studentStreet, id: :student_studentStreet %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentCity %>
+    <%= form.text_field :studentCity, id: :student_studentCity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentZip %>
+    <%= form.number_field :studentZip, id: :student_studentZip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentPhone %>
+    <%= form.number_field :studentPhone, id: :student_studentPhone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentEmail %>
+    <%= form.text_field :studentEmail, id: :student_studentEmail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentDoB %>
+    <%= form.date_select :studentDoB, id: :student_studentDoB %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentGender %>
+    <%= form.text_field :studentGender, id: :student_studentGender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentYear %>
+    <%= form.number_field :studentYear, id: :student_studentYear %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentNationality %>
+    <%= form.text_field :studentNationality, id: :student_studentNationality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentNeeds %>
+    <%= form.text_field :studentNeeds, id: :student_studentNeeds %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentComments %>
+    <%= form.text_field :studentComments, id: :student_studentComments %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentStatus %>
+    <%= form.text_field :studentStatus, id: :student_studentStatus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentMajor %>
+    <%= form.text_field :studentMajor, id: :student_studentMajor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentMinor %>
+    <%= form.text_field :studentMinor, id: :student_studentMinor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :advisorID %>
+    <%= form.text_field :advisorID, id: :student_advisorID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nextID %>
+    <%= form.text_field :nextID, id: :student_nextID %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
