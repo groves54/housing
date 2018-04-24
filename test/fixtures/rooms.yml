@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  roomPlace: MyString
+  roomNumber: 1
+  roomRent: 9.99
+  roomAvailability: MyString
+  hallName: MyString
+  apartmentID: 1
+
+two:
+  roomPlace: MyString
+  roomNumber: 1
+  roomRent: 9.99
+  roomAvailability: MyString
+  hallName: MyString
+  apartmentID: 1

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  apartmentCity: MyString
+  apartmentStreet: MyString
+  apartmentZip: 1
+  apartmentNumOfRooms: 1
+
+two:
+  apartmentCity: MyString
+  apartmentStreet: MyString
+  apartmentZip: 1
+  apartmentNumOfRooms: 1

@@ -1,0 +1,57 @@
+<%= form_with(model: lease, local: true) do |form| %>
+  <% if lease.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lease.errors.count, "error") %> prohibited this lease from being saved:</h2>
+
+      <ul>
+      <% lease.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :leaseDuration %>
+    <%= form.text_field :leaseDuration, id: :lease_leaseDuration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :leaseCity %>
+    <%= form.text_field :leaseCity, id: :lease_leaseCity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :leaseStreet %>
+    <%= form.text_field :leaseStreet, id: :lease_leaseStreet %>
+  </div>
+
+  <div class="field">
+    <%= form.label :leaseZip %>
+    <%= form.number_field :leaseZip, id: :lease_leaseZip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :leaseStart %>
+    <%= form.date_select :leaseStart, id: :lease_leaseStart %>
+  </div>
+
+  <div class="field">
+    <%= form.label :leaseEnd %>
+    <%= form.date_select :leaseEnd, id: :lease_leaseEnd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :studentID %>
+    <%= form.number_field :studentID, id: :lease_studentID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :invoiceID %>
+    <%= form.number_field :invoiceID, id: :lease_invoiceID %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

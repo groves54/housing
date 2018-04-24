@@ -1,0 +1,47 @@
+<%= form_with(model: hall, local: true) do |form| %>
+  <% if hall.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hall.errors.count, "error") %> prohibited this hall from being saved:</h2>
+
+      <ul>
+      <% hall.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :hallName %>
+    <%= form.text_field :hallName, id: :hall_hallName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hallCity %>
+    <%= form.text_field :hallCity, id: :hall_hallCity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hallStreet %>
+    <%= form.text_field :hallStreet, id: :hall_hallStreet %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hallZip %>
+    <%= form.number_field :hallZip, id: :hall_hallZip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hallPhone %>
+    <%= form.number_field :hallPhone, id: :hall_hallPhone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :managerID %>
+    <%= form.number_field :managerID, id: :hall_managerID %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

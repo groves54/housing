@@ -17,7 +17,7 @@ class StudentsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create student" do
     assert_difference('Student.count') do
-      post students_url, params: { student: { advisorID: @student.advisorID, nextID: @student.nextID, studentCity: @student.studentCity, studentComments: @student.studentComments, studentDoB: @student.studentDoB, studentEmail: @student.studentEmail, studentFname: @student.studentFname, studentGender: @student.studentGender, studentId: @student.studentId, studentLname: @student.studentLname, studentMajor: @student.studentMajor, studentMinor: @student.studentMinor, studentNationality: @student.studentNationality, studentNeeds: @student.studentNeeds, studentPhone: @student.studentPhone, studentStatus: @student.studentStatus, studentStreet: @student.studentStreet, studentYear: @student.studentYear, studentZip: @student.studentZip } }
+      post students_url, params: { student: { advisorID: @student.advisorID, city: @student.city, comments: @student.comments, dob: @student.dob, email: @student.email, fName: @student.fName, gender: @student.gender, lName: @student.lName, major: @student.major, minor: @student.minor, nationality: @student.nationality, needs: @student.needs, nextID: @student.nextID, phone: @student.phone, status: @student.status, street: @student.street, year: @student.year, zip: @student.zip } }
     end
 
     assert_redirected_to student_url(Student.last)
@@ -34,7 +34,7 @@ class StudentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update student" do
-    patch student_url(@student), params: { student: { advisorID: @student.advisorID, nextID: @student.nextID, studentCity: @student.studentCity, studentComments: @student.studentComments, studentDoB: @student.studentDoB, studentEmail: @student.studentEmail, studentFname: @student.studentFname, studentGender: @student.studentGender, studentId: @student.studentId, studentLname: @student.studentLname, studentMajor: @student.studentMajor, studentMinor: @student.studentMinor, studentNationality: @student.studentNationality, studentNeeds: @student.studentNeeds, studentPhone: @student.studentPhone, studentStatus: @student.studentStatus, studentStreet: @student.studentStreet, studentYear: @student.studentYear, studentZip: @student.studentZip } }
+    patch student_url(@student), params: { student: { advisorID: @student.advisorID, city: @student.city, comments: @student.comments, dob: @student.dob, email: @student.email, fName: @student.fName, gender: @student.gender, lName: @student.lName, major: @student.major, minor: @student.minor, nationality: @student.nationality, needs: @student.needs, nextID: @student.nextID, phone: @student.phone, status: @student.status, street: @student.street, year: @student.year, zip: @student.zip } }
     assert_redirected_to student_url(@student)
   end
 

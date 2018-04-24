@@ -1,0 +1,77 @@
+<%= form_with(model: staff, local: true) do |form| %>
+  <% if staff.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(staff.errors.count, "error") %> prohibited this staff from being saved:</h2>
+
+      <ul>
+      <% staff.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :staffFname %>
+    <%= form.text_field :staffFname, id: :staff_staffFname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffLname %>
+    <%= form.text_field :staffLname, id: :staff_staffLname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffStreet %>
+    <%= form.text_field :staffStreet, id: :staff_staffStreet %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffCity %>
+    <%= form.text_field :staffCity, id: :staff_staffCity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffZip %>
+    <%= form.number_field :staffZip, id: :staff_staffZip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffPhone %>
+    <%= form.number_field :staffPhone, id: :staff_staffPhone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffEmail %>
+    <%= form.text_field :staffEmail, id: :staff_staffEmail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffDoB %>
+    <%= form.date_select :staffDoB, id: :staff_staffDoB %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffGender %>
+    <%= form.text_field :staffGender, id: :staff_staffGender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffPosition %>
+    <%= form.text_field :staffPosition, id: :staff_staffPosition %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffLocation %>
+    <%= form.text_field :staffLocation, id: :staff_staffLocation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staffPhone %>
+    <%= form.number_field :staffPhone, id: :staff_staffPhone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

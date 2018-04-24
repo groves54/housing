@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hallname:</strong>
+  <%= @hall.hallName %>
+</p>
+
+<p>
+  <strong>Hallcity:</strong>
+  <%= @hall.hallCity %>
+</p>
+
+<p>
+  <strong>Hallstreet:</strong>
+  <%= @hall.hallStreet %>
+</p>
+
+<p>
+  <strong>Hallzip:</strong>
+  <%= @hall.hallZip %>
+</p>
+
+<p>
+  <strong>Hallphone:</strong>
+  <%= @hall.hallPhone %>
+</p>
+
+<p>
+  <strong>Managerid:</strong>
+  <%= @hall.managerID %>
+</p>
+
+<%= link_to 'Edit', edit_hall_path(@hall) %> |
+<%= link_to 'Back', halls_path %>

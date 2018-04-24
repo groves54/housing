@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Invoicesemester:</strong>
+  <%= @invoice.invoiceSemester %>
+</p>
+
+<p>
+  <strong>Invoicepaymentdue:</strong>
+  <%= @invoice.invoicePaymentDue %>
+</p>
+
+<p>
+  <strong>Leaseid:</strong>
+  <%= @invoice.leaseID %>
+</p>
+
+<%= link_to 'Edit', edit_invoice_path(@invoice) %> |
+<%= link_to 'Back', invoices_path %>

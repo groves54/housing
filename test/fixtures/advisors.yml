@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  advisorFname: MyString
+  advisorLname: MyString
+  advisorPosition: MyString
+  advisorDepartment: MyString
+  advisorPhone: 1
+  advisorEmail: MyString
+  advisorRoom: MyString
+
+two:
+  advisorFname: MyString
+  advisorLname: MyString
+  advisorPosition: MyString
+  advisorDepartment: MyString
+  advisorPhone: 1
+  advisorEmail: MyString
+  advisorRoom: MyString

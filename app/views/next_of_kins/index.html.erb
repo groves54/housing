@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Next Of Kins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nextfname</th>
+      <th>Nextlname</th>
+      <th>Nextrelationship</th>
+      <th>Nextstreet</th>
+      <th>Nextcity</th>
+      <th>Nextzip</th>
+      <th>Nextphone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @next_of_kins.each do |next_of_kin| %>
+      <tr>
+        <td><%= next_of_kin.nextFname %></td>
+        <td><%= next_of_kin.nextLname %></td>
+        <td><%= next_of_kin.nextRelationship %></td>
+        <td><%= next_of_kin.nextStreet %></td>
+        <td><%= next_of_kin.nextCity %></td>
+        <td><%= next_of_kin.nextZip %></td>
+        <td><%= next_of_kin.nextPhone %></td>
+        <td><%= link_to 'Show', next_of_kin %></td>
+        <td><%= link_to 'Edit', edit_next_of_kin_path(next_of_kin) %></td>
+        <td><%= link_to 'Destroy', next_of_kin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Next Of Kin', new_next_of_kin_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hallName: MyString
+  hallCity: MyString
+  hallStreet: MyString
+  hallZip: 1
+  hallPhone: 1
+  managerID: 1
+
+two:
+  hallName: MyString
+  hallCity: MyString
+  hallStreet: MyString
+  hallZip: 1
+  hallPhone: 1
+  managerID: 1

@@ -1,0 +1,52 @@
+<%= form_with(model: next_of_kin, local: true) do |form| %>
+  <% if next_of_kin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(next_of_kin.errors.count, "error") %> prohibited this next_of_kin from being saved:</h2>
+
+      <ul>
+      <% next_of_kin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nextFname %>
+    <%= form.text_field :nextFname, id: :next_of_kin_nextFname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nextLname %>
+    <%= form.text_field :nextLname, id: :next_of_kin_nextLname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nextRelationship %>
+    <%= form.text_field :nextRelationship, id: :next_of_kin_nextRelationship %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nextStreet %>
+    <%= form.text_field :nextStreet, id: :next_of_kin_nextStreet %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nextCity %>
+    <%= form.text_field :nextCity, id: :next_of_kin_nextCity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nextZip %>
+    <%= form.number_field :nextZip, id: :next_of_kin_nextZip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nextPhone %>
+    <%= form.number_field :nextPhone, id: :next_of_kin_nextPhone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  leaseDuration: MyString
+  leaseCity: MyString
+  leaseStreet: MyString
+  leaseZip: 1
+  leaseStart: 2018-04-24
+  leaseEnd: 2018-04-24
+  studentID: 1
+  invoiceID: 1
+
+two:
+  leaseDuration: MyString
+  leaseCity: MyString
+  leaseStreet: MyString
+  leaseZip: 1
+  leaseStart: 2018-04-24
+  leaseEnd: 2018-04-24
+  studentID: 1
+  invoiceID: 1

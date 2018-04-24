@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nextfname:</strong>
+  <%= @next_of_kin.nextFname %>
+</p>
+
+<p>
+  <strong>Nextlname:</strong>
+  <%= @next_of_kin.nextLname %>
+</p>
+
+<p>
+  <strong>Nextrelationship:</strong>
+  <%= @next_of_kin.nextRelationship %>
+</p>
+
+<p>
+  <strong>Nextstreet:</strong>
+  <%= @next_of_kin.nextStreet %>
+</p>
+
+<p>
+  <strong>Nextcity:</strong>
+  <%= @next_of_kin.nextCity %>
+</p>
+
+<p>
+  <strong>Nextzip:</strong>
+  <%= @next_of_kin.nextZip %>
+</p>
+
+<p>
+  <strong>Nextphone:</strong>
+  <%= @next_of_kin.nextPhone %>
+</p>
+
+<%= link_to 'Edit', edit_next_of_kin_path(@next_of_kin) %> |
+<%= link_to 'Back', next_of_kins_path %>

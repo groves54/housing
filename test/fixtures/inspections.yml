@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  inspectionDate: 2018-04-24
+  inspectionStatus: MyString
+  inspectionComment: MyString
+  apartmentID: 1
+  inspectorID: 1
+
+two:
+  inspectionDate: 2018-04-24
+  inspectionStatus: MyString
+  inspectionComment: MyString
+  apartmentID: 1
+  inspectorID: 1

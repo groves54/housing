@@ -10,7 +10,28 @@
   <body>
   <div class="topnav" id="myTopnav">
     <a href="/index" class="active"><%= image_tag("muhousing.png", :size => "160x60") %></a>
-    <a href="/student">Student</a>
+    <table>
+      <tr>
+        <th><a href="/student">Student</a></th>
+        <th><a href="/instructor">Instructor</a></th>
+        <th><a href="/staff">Staff</a></th>
+        <th><a href="/hall">Hall</a></th>
+        <th><a href="/parking">Parking</a></th>
+        <th><a href="/payment">Payment</a></th>
+        <th><a href="/room">Room</a></th>
+        <th><a href="/next_of_kin">Next of Kin</a></th>
+      </tr>
+        <th><a href="/advisor">Advisor</a></th>
+        <th><a href="/course">Course</a></th>
+        <th><a href="/inspection">Inspection</a></th>
+        <th><a href="/apartment">Apartment</a></th>
+        <th><a href="/vehicle">Vehicle</a></th>
+        <th><a href="/invoice">Invoice</a></th>
+        <th><a href="/lease">Lease</a></th>
+      </tr>
+    </table>
+
+
 
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
@@ -41,23 +62,27 @@
   <style>
 
     @import 'https://fonts.googleapis.com/css?family=Raleway';
-    .topnav {
-      background-color: #05ff00;
-      overflow: hidden;
-      box-shadow: 0 4px 6px 0 rgba(0,0,0,0.5);
-      font-family: Raleway;
-      width:100%;
-    }
 
     footer{
       z-index: 1;
-      position:absolute;
+      position: relative;
       bottom:0;
       width:100%;
       height:60px;   /* Height of the footer */
       background: #06ff08;
       color: rgb(0, 0, 0);
       text-align: center;
+    }
+    table {
+      float: right;
+    }
+
+    .topnav {
+      background-color: #05ff00;
+      overflow: hidden;
+      box-shadow: 0 4px 6px 0 rgba(0,0,0,0.5);
+      font-family: Raleway;
+      width:100%;
     }
     /* Style the links inside the navigation bar */
     .topnav .active {
@@ -68,6 +93,8 @@
       padding: 14px 16px;
       text-decoration: none;
       font-size: 18px;
+      padding-bottom: 36px;
+      padding-top: 36px;
     }
 
     .topnav a, .topnav div a {
@@ -78,8 +105,8 @@
       padding: 14px 16px;
       text-decoration: none;
       font-size: 18px;
-      padding-bottom: 36px;
-      padding-top: 36px;
+      padding-bottom: 18px;
+      padding-top: 18px;
     }
 
     /* Change the color of links on hover */

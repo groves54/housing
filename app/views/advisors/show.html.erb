@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Advisorfname:</strong>
+  <%= @advisor.advisorFname %>
+</p>
+
+<p>
+  <strong>Advisorlname:</strong>
+  <%= @advisor.advisorLname %>
+</p>
+
+<p>
+  <strong>Advisorposition:</strong>
+  <%= @advisor.advisorPosition %>
+</p>
+
+<p>
+  <strong>Advisordepartment:</strong>
+  <%= @advisor.advisorDepartment %>
+</p>
+
+<p>
+  <strong>Advisorphone:</strong>
+  <%= @advisor.advisorPhone %>
+</p>
+
+<p>
+  <strong>Advisoremail:</strong>
+  <%= @advisor.advisorEmail %>
+</p>
+
+<p>
+  <strong>Advisorroom:</strong>
+  <%= @advisor.advisorRoom %>
+</p>
+
+<%= link_to 'Edit', edit_advisor_path(@advisor) %> |
+<%= link_to 'Back', advisors_path %>

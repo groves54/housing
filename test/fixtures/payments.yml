@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  paymentDate: 2018-04-24
+  paymentMethod: MyString
+  paymentReminder: 2018-04-24
+  paymentReminder2: 2018-04-24
+  studentID: 1
+  invoiceID: 1
+
+two:
+  paymentDate: 2018-04-24
+  paymentMethod: MyString
+  paymentReminder: 2018-04-24
+  paymentReminder2: 2018-04-24
+  studentID: 1
+  invoiceID: 1

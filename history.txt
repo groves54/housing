@@ -1,0 +1,521 @@
+    1  sudo apt-get purge openjdk-\*
+    2  sudo add-apt-repository ppa:webupd8team/java
+    3  sudo apt-get update
+    4  sudo apt-get install oracle-java9-installer
+    5  java -version
+    6  mkdir -p ~/bin/rubymines/
+    7  mkdir -p ~/bin/rubymine/
+    8  mkdir -p ~/bin/rubymines/
+    9  mkdir -p ~/bin/rubymine/
+   10  mv ~/Downloads/RubyMine-X.Y.Z ~/bin/rubymines
+   11  tar -xzf RubyMine-X.Y.Z.tar.gz
+   12  ln -nfs ~/bin/rubymines/RubyMine-X.Y.Z ~/bin/rubymine
+   13  /home/$USER/bin/rubymine/bin/rubymine.sh
+   14  /home/$USER/bin/rubymines/bin/rubymine.sh
+   15  sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+   16  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+   17  apt-get install git
+   18  sudo apt-get install git
+   19  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+   20  git config --global user.name "groves54"
+   21  git config --global user.email "groves54@marshall.edu"
+   22  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+   23  echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+   24  source ~/.bashrc
+   25  type rbenv
+   26  git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+   27  rbenv install -l
+   28  rbenv install 2.5.0
+   29  echo "gem: --no-document" > ~/.gemrc
+   30  gem install bundler
+   31  gem env home
+   32  sudo apt-get install gem
+   33  gem env home
+   34  gem install rails
+   35  bundle-install
+   36  gem install bundler
+   37  git pull
+   38  git config credential.helper store
+   39  git pull
+   40  rails server
+   41  git pull
+   42  rails server
+   43  sudo gem install daterangepicker-rails
+   44  rails server
+   45  git pull
+   46  git commit -m "calender progess"
+   47  git push
+   48  rails server
+   49  git pull
+   50  rails server
+   51  ./assess8
+   52  make
+   53  ./assess8
+   54  cd src
+   55  ./assess8
+   56  make
+   57  cd
+   58  ./assess8
+   59  make
+   60  run
+   61  ./assess8
+   62  make
+   63  assess
+   64  ./assess8
+   65  /assess8
+   66  assess8
+   67  assess 8
+   68  make
+   69  ./assess8
+   70  .assess8
+   71  ./assess8
+   72  ./assess 8
+   73  ./assess8
+   74  ./assess 8
+   75  git pull
+   76  rails server
+   77  cd Desktop/Team3
+   78  ./rubymine.sh
+   79  rubymine.sh
+   80  ./rubymine.sh
+   81  exit
+   82  bundle install
+   83  sudo gem install sqlite3 -v '1.3.11'
+   84  sudo gem uninstall sqlite3
+   85  sudo gem install sqlite3 -v '1.3.11'
+   86  bundle install
+   87  apt-get install libsqlite3-dev
+   88  sudo apt-get install libsqlite3-dev
+   89  bundle install
+   90  rails server
+   91  git pull
+   92  migrate
+   93  undle install
+   94  bundle install
+   95  rails g model recurring_event title anchor:date frequency:integer color
+   96  rails g model events title start:datetime end:datetime color
+   97  rake db:migrate
+   98  bundle install
+   99  gem install json -v '1.8.1'
+  100  sudo gem install json -v '1.8.1'
+  101  bundle install
+  102  bundle install
+  103  cd Desktop
+  104  cd
+  105  cd Deskto
+  106  cd Desktop
+  107  git clone https://github.com/vinsol/fullcalendar_rails.git
+  108  cd fullcalendar_rails
+  109  bundle install
+  110  sudo gem install json -v '1.8.1'
+  111  cd ...
+  112  cd /..
+  113  cd Deskto
+  114  cd Desktop
+  115  cd
+  116  cd Desktop
+  117  git clone https://github.com/driftingruby/042-fullcalendar.git
+  118  cd 042-fullcalendar
+  119  bundle install
+  120  rails s
+  121  rails migrate
+  122  rake db:migrate
+  123  bundle exec
+  124  bundle exec install
+  125  bundle install exec
+  126  bundle exec rake db:migrate
+  127  rails s
+  128  cd ../
+  129  git clone https://github.com/driftingruby/094-recurring-events-on-full-calendar.git
+  130  echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+  131  git pull
+  132  rails db .mode column
+  133  git pull
+  134  git stash
+  135  git pull
+  136  rails g model id:integer title start:datetime end:datetime created_at:datetime updated_at:datetime psych child_id:integer psychologist_id:integer approved parent_id:integer parent_first parent_last
+  137  rails g model Appeals id:integer title start:datetime end:datetime created_at:datetime updated_at:datetime psych child_id:integer psychologist_id:integer approved parent_id:integer parent_first parent_last
+  138  rails db:migrate
+  139  rails db:migrate RAILS_ENV="production"
+  140  a = Appeal.new(:id => 1, :title =>"What is wrong", :start =>'2018-03-19 06:30:00', :end =>'2018-03-19 08:00:00', :child_id => 19, psychologist_id => 4, approved => "approved", :parent_first => "Christopher")
+  141  Appeal.new(:id => 1, :title =>"What is wrong", :start =>'2018-03-19 06:30:00', :end =>'2018-03-19 08:00:00', :child_id => 19, psychologist_id => 4, approved => "approved", :parent_first => "Christopher")
+  142  Appeal.create(:id => 1, :title =>"What is wrong", :start =>'2018-03-19 06:30:00', :end =>'2018-03-19 08:00:00', :child_id => 19, psychologist_id => 4, approved => "approved", :parent_first => "Christopher")
+  143  Appeal.create(:title =>"What is wrong", :start =>'2018-03-19 06:30:00', :end =>'2018-03-19 08:00:00', :child_id => 19, psychologist_id => 4, approved => "approved", :parent_first => "Christopher")
+  144  rake db:migrate
+  145  ./bash_history
+  146  cd Desktop
+  147  history > history_for_print.txt
+  148  git push
+  149  git config credential.helper store
+  150  git push
+  151  history > history_file.txt
+  152  rails server
+  153  rails generate scaffold_controller requests
+  154  rails server
+  155  ps -ef
+  156  rails server
+  157  rails server -h
+  158  rails server -p
+  159  rails server -P
+  160  rails server -hP
+  161  rails server 
+  162  cd Deskto
+  163  cd Desktop
+  164  rails new housing
+  165  cd housing
+  166  rails server
+  167  git init
+  168  git push
+  169  git push groves54
+  170  git remote add origin https://github.com/groves54/housing.git
+  171  git push -u origin master
+  172  sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+  173  sudo mysql_install_db
+  174  sudo mysql_secure_installation
+  175  gem install mysql2
+  176  sudo gem install mysql2
+  177  rails -d mysql
+  178  cd ..
+  179  rails housing -d mysql
+  180  rails new housing -d mysql
+  181  y
+  182  cd housing
+  183  vi config/database.yml
+  184  rake db:create
+  185  git push
+  186  rails s
+  187  heroku create
+  188  wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+  189  heroku --version
+  190  heroku login
+  191  gem mysql2
+  192  install
+  193  dir c:\openssl
+  194  heroku create
+  195  git config --list | grep heroku
+  196  git push heroku master
+  197  sudo apt-get update
+  198  sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+  199  sudo mysql_install_db
+  200  git remote rm heroku
+  201  heroku git:remote -a muhousing
+  202  git remote rm heroku
+  203  heroku git:remote -a muhousing
+  204  heroku run rake db:migrate
+  205  git config --list | grep heroku
+  206  git push heroku1 master
+  207  git push heroku master
+  208  heroku ps:scale web=1
+  209  heroku ps
+  210  heroku open
+  211  heroku apps:rename muhousing
+  212  git remote rm heroku
+  213  heroku git:remote -a muhousing
+  214  rails generate scaffold Students studentId:integer studentFname:string studentLname:string studentStreet:string studentCity:string studentZip:integer studentPhone:integer studentEmail:string studentDoB:date studentGender:character studentYear:integer studentNationality:string studentNeeds:string studentComments:string studentStatus:string studentMajor:string studentMinor:string advisorID:string nextID:string
+  215  rails generate scaffold home
+  216  rake db:rollback
+  217  git stash
+  218  git pull
+  219  rails generate controller Home index
+  220  rails s
+  221  rails db:migrate
+  222  rails generate scaffold Students studentId:integer studentFname:string studentLname:string studentStreet:string studentCity:string studentZip:integer studentPhone:integer studentEmail:string studentDoB:date studentGender:character studentYear:integer studentNationality:string studentNeeds:string studentComments:string studentStatus:string studentMajor:string studentMinor:string advisorID:string nextID:string
+  223  rails db:migrate
+  224  rake db:drop:all
+  225  rails db:migrate
+  226  rails s
+  227  heroku addons:create cleardb:ignite
+  228  heroku config | grep CLEARDB_DATABASE_URL
+  229  heroku config:set DATABASE_URL='mysql://b604479bf1d960:4420b94c@us-cdbr-iron-east-05.cleardb.net/heroku_e865d7843dc53eb?reconnect=true
+  230  '
+  231  rails generate scaffold Students studentId:integer studentFname:string studentLname:string studentStreet:string studentCity:string studentZip:integer studentPhone:integer studentEmail:string studentDoB:date studentGender:character studentYear:integer studentNationality:string studentNeeds:string studentComments:string studentStatus:string studentMajor:string studentMinor:string advisorID:string nextID:string
+  232  rails db:migrate
+  233  rake db:migrate
+  234  heroku config | grep CLEARDB_DATABASE_URL
+  235  file:///home/bryan/Desktop/housing/config/database.yml 
+  236  mysql://b604479bf1d960:4420b94c@us-cdbr-iron-east-05.cleardb.net/heroku_e865d7843dc53eb?reconnect=true
+  237  rails db:migrate
+  238  heroku config:add DATABASE_URL=mysql://b604479bf1d960:4420b94c@us-cdbr-iron-east-05.cleardb.net/heroku_e865d7843dc53eb?reconnect=true
+  239  rails db:migrate
+  240  mysqladmin variables | grep socket
+  241  rails db:migrate
+  242  rake db:migrate
+  243  mysql -u
+  244  mysql -u root -p
+  245  rake db:migrate
+  246  rails s
+  247  heroku logs
+  248  heroku run rake db:migrate
+  249  bundle install
+  250  heroku run rake db:migrate
+  251  rake db:migrate
+  252  rails db:migrate
+  253  web: bundle exec puma -C config/puma.rb
+  254  bundle exec puma -C config/puma.rb
+  255  heroku config:set RAILS_MAX_THREADS=1
+  256  heroku run rake db:migrate
+  257  rails s
+  258  history >> history.txt
+    1  sudo apt-get purge openjdk-\*
+    2  sudo add-apt-repository ppa:webupd8team/java
+    3  sudo apt-get update
+    4  sudo apt-get install oracle-java9-installer
+    5  java -version
+    6  mkdir -p ~/bin/rubymines/
+    7  mkdir -p ~/bin/rubymine/
+    8  mkdir -p ~/bin/rubymines/
+    9  mkdir -p ~/bin/rubymine/
+   10  mv ~/Downloads/RubyMine-X.Y.Z ~/bin/rubymines
+   11  tar -xzf RubyMine-X.Y.Z.tar.gz
+   12  ln -nfs ~/bin/rubymines/RubyMine-X.Y.Z ~/bin/rubymine
+   13  /home/$USER/bin/rubymine/bin/rubymine.sh
+   14  /home/$USER/bin/rubymines/bin/rubymine.sh
+   15  sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+   16  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+   17  apt-get install git
+   18  sudo apt-get install git
+   19  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+   20  git config --global user.name "groves54"
+   21  git config --global user.email "groves54@marshall.edu"
+   22  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+   23  echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+   24  source ~/.bashrc
+   25  type rbenv
+   26  git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+   27  rbenv install -l
+   28  rbenv install 2.5.0
+   29  echo "gem: --no-document" > ~/.gemrc
+   30  gem install bundler
+   31  gem env home
+   32  sudo apt-get install gem
+   33  gem env home
+   34  gem install rails
+   35  bundle-install
+   36  gem install bundler
+   37  git pull
+   38  git config credential.helper store
+   39  git pull
+   40  rails server
+   41  git pull
+   42  rails server
+   43  sudo gem install daterangepicker-rails
+   44  rails server
+   45  git pull
+   46  git commit -m "calender progess"
+   47  git push
+   48  rails server
+   49  git pull
+   50  rails server
+   51  ./assess8
+   52  make
+   53  ./assess8
+   54  cd src
+   55  ./assess8
+   56  make
+   57  cd
+   58  ./assess8
+   59  make
+   60  run
+   61  ./assess8
+   62  make
+   63  assess
+   64  ./assess8
+   65  /assess8
+   66  assess8
+   67  assess 8
+   68  make
+   69  ./assess8
+   70  .assess8
+   71  ./assess8
+   72  ./assess 8
+   73  ./assess8
+   74  ./assess 8
+   75  git pull
+   76  rails server
+   77  cd Desktop/Team3
+   78  ./rubymine.sh
+   79  rubymine.sh
+   80  ./rubymine.sh
+   81  exit
+   82  bundle install
+   83  sudo gem install sqlite3 -v '1.3.11'
+   84  sudo gem uninstall sqlite3
+   85  sudo gem install sqlite3 -v '1.3.11'
+   86  bundle install
+   87  apt-get install libsqlite3-dev
+   88  sudo apt-get install libsqlite3-dev
+   89  bundle install
+   90  rails server
+   91  git pull
+   92  migrate
+   93  undle install
+   94  bundle install
+   95  rails g model recurring_event title anchor:date frequency:integer color
+   96  rails g model events title start:datetime end:datetime color
+   97  rake db:migrate
+   98  bundle install
+   99  gem install json -v '1.8.1'
+  100  sudo gem install json -v '1.8.1'
+  101  bundle install
+  102  bundle install
+  103  cd Desktop
+  104  cd
+  105  cd Deskto
+  106  cd Desktop
+  107  git clone https://github.com/vinsol/fullcalendar_rails.git
+  108  cd fullcalendar_rails
+  109  bundle install
+  110  sudo gem install json -v '1.8.1'
+  111  cd ...
+  112  cd /..
+  113  cd Deskto
+  114  cd Desktop
+  115  cd
+  116  cd Desktop
+  117  git clone https://github.com/driftingruby/042-fullcalendar.git
+  118  cd 042-fullcalendar
+  119  bundle install
+  120  rails s
+  121  rails migrate
+  122  rake db:migrate
+  123  bundle exec
+  124  bundle exec install
+  125  bundle install exec
+  126  bundle exec rake db:migrate
+  127  rails s
+  128  cd ../
+  129  git clone https://github.com/driftingruby/094-recurring-events-on-full-calendar.git
+  130  echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+  131  git pull
+  132  rails db .mode column
+  133  git pull
+  134  git stash
+  135  git pull
+  136  rails g model id:integer title start:datetime end:datetime created_at:datetime updated_at:datetime psych child_id:integer psychologist_id:integer approved parent_id:integer parent_first parent_last
+  137  rails g model Appeals id:integer title start:datetime end:datetime created_at:datetime updated_at:datetime psych child_id:integer psychologist_id:integer approved parent_id:integer parent_first parent_last
+  138  rails db:migrate
+  139  rails db:migrate RAILS_ENV="production"
+  140  a = Appeal.new(:id => 1, :title =>"What is wrong", :start =>'2018-03-19 06:30:00', :end =>'2018-03-19 08:00:00', :child_id => 19, psychologist_id => 4, approved => "approved", :parent_first => "Christopher")
+  141  Appeal.new(:id => 1, :title =>"What is wrong", :start =>'2018-03-19 06:30:00', :end =>'2018-03-19 08:00:00', :child_id => 19, psychologist_id => 4, approved => "approved", :parent_first => "Christopher")
+  142  Appeal.create(:id => 1, :title =>"What is wrong", :start =>'2018-03-19 06:30:00', :end =>'2018-03-19 08:00:00', :child_id => 19, psychologist_id => 4, approved => "approved", :parent_first => "Christopher")
+  143  Appeal.create(:title =>"What is wrong", :start =>'2018-03-19 06:30:00', :end =>'2018-03-19 08:00:00', :child_id => 19, psychologist_id => 4, approved => "approved", :parent_first => "Christopher")
+  144  rake db:migrate
+  145  ./bash_history
+  146  cd Desktop
+  147  history > history_for_print.txt
+  148  git push
+  149  git config credential.helper store
+  150  git push
+  151  history > history_file.txt
+  152  rails server
+  153  rails generate scaffold_controller requests
+  154  rails server
+  155  ps -ef
+  156  rails server
+  157  rails server -h
+  158  rails server -p
+  159  rails server -P
+  160  rails server -hP
+  161  rails server 
+  162  cd Deskto
+  163  cd Desktop
+  164  rails new housing
+  165  cd housing
+  166  rails server
+  167  git init
+  168  git push
+  169  git push groves54
+  170  git remote add origin https://github.com/groves54/housing.git
+  171  git push -u origin master
+  172  sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+  173  sudo mysql_install_db
+  174  sudo mysql_secure_installation
+  175  gem install mysql2
+  176  sudo gem install mysql2
+  177  rails -d mysql
+  178  cd ..
+  179  rails housing -d mysql
+  180  rails new housing -d mysql
+  181  y
+  182  cd housing
+  183  vi config/database.yml
+  184  rake db:create
+  185  git push
+  186  rails s
+  187  heroku create
+  188  wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+  189  heroku --version
+  190  heroku login
+  191  gem mysql2
+  192  install
+  193  dir c:\openssl
+  194  heroku create
+  195  git config --list | grep heroku
+  196  git push heroku master
+  197  sudo apt-get update
+  198  sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+  199  sudo mysql_install_db
+  200  git remote rm heroku
+  201  heroku git:remote -a muhousing
+  202  git remote rm heroku
+  203  heroku git:remote -a muhousing
+  204  heroku run rake db:migrate
+  205  git config --list | grep heroku
+  206  git push heroku1 master
+  207  git push heroku master
+  208  heroku ps:scale web=1
+  209  heroku ps
+  210  heroku open
+  211  heroku apps:rename muhousing
+  212  git remote rm heroku
+  213  heroku git:remote -a muhousing
+  214  rails generate scaffold Students studentId:integer studentFname:string studentLname:string studentStreet:string studentCity:string studentZip:integer studentPhone:integer studentEmail:string studentDoB:date studentGender:character studentYear:integer studentNationality:string studentNeeds:string studentComments:string studentStatus:string studentMajor:string studentMinor:string advisorID:string nextID:string
+  215  rails generate scaffold home
+  216  rake db:rollback
+  217  git stash
+  218  git pull
+  219  rails generate controller Home index
+  220  rails s
+  221  rails db:migrate
+  222  rails generate scaffold Students studentId:integer studentFname:string studentLname:string studentStreet:string studentCity:string studentZip:integer studentPhone:integer studentEmail:string studentDoB:date studentGender:character studentYear:integer studentNationality:string studentNeeds:string studentComments:string studentStatus:string studentMajor:string studentMinor:string advisorID:string nextID:string
+  223  rails db:migrate
+  224  rake db:drop:all
+  225  rails db:migrate
+  226  rails s
+  227  heroku addons:create cleardb:ignite
+  228  heroku config | grep CLEARDB_DATABASE_URL
+  229  heroku config:set DATABASE_URL='mysql://b604479bf1d960:4420b94c@us-cdbr-iron-east-05.cleardb.net/heroku_e865d7843dc53eb?reconnect=true
+  230  '
+  231  rails generate scaffold Students studentId:integer studentFname:string studentLname:string studentStreet:string studentCity:string studentZip:integer studentPhone:integer studentEmail:string studentDoB:date studentGender:character studentYear:integer studentNationality:string studentNeeds:string studentComments:string studentStatus:string studentMajor:string studentMinor:string advisorID:string nextID:string
+  232  rails db:migrate
+  233  rake db:migrate
+  234  heroku config | grep CLEARDB_DATABASE_URL
+  235  file:///home/bryan/Desktop/housing/config/database.yml 
+  236  mysql://b604479bf1d960:4420b94c@us-cdbr-iron-east-05.cleardb.net/heroku_e865d7843dc53eb?reconnect=true
+  237  rails db:migrate
+  238  heroku config:add DATABASE_URL=mysql://b604479bf1d960:4420b94c@us-cdbr-iron-east-05.cleardb.net/heroku_e865d7843dc53eb?reconnect=true
+  239  rails db:migrate
+  240  mysqladmin variables | grep socket
+  241  rails db:migrate
+  242  rake db:migrate
+  243  mysql -u
+  244  mysql -u root -p
+  245  rake db:migrate
+  246  rails s
+  247  heroku logs
+  248  heroku run rake db:migrate
+  249  bundle install
+  250  heroku run rake db:migrate
+  251  rake db:migrate
+  252  rails db:migrate
+  253  rails s
+  254  rails generate scaffold Students Id:integer fName:string lName:string street:string city:string zip:integer phone:integer email:string dob:date gender:character year:string nationality:string needs:string comments:string status:string major:string minor:string advisorID:string nextID:string
+  255  rails s
+  256  rake db:migrate
+  257  rails s
+  258  rails generate scaffold Students Id:integer fName:string lName:string street:string city:string zip:integer phone:integer email:string dob:date gender:character year:string nationality:string needs:string comments:string status:string major:string minor:string advisorID:string nextID:string
+  259  rake db:migrate
+  260  rails generate scaffold Students fName:string lName:string street:string city:string zip:integer phone:integer email:string dob:date gender:string year:string nationality:string needs:string comments:string status:string major:string minor:string advisorID:string nextID:string
+  261  rake db:migrate
+  262  rails s
+  263  history >> history.txt

@@ -1,0 +1,52 @@
+<%= form_with(model: advisor, local: true) do |form| %>
+  <% if advisor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(advisor.errors.count, "error") %> prohibited this advisor from being saved:</h2>
+
+      <ul>
+      <% advisor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :advisorFname %>
+    <%= form.text_field :advisorFname, id: :advisor_advisorFname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :advisorLname %>
+    <%= form.text_field :advisorLname, id: :advisor_advisorLname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :advisorPosition %>
+    <%= form.text_field :advisorPosition, id: :advisor_advisorPosition %>
+  </div>
+
+  <div class="field">
+    <%= form.label :advisorDepartment %>
+    <%= form.text_field :advisorDepartment, id: :advisor_advisorDepartment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :advisorPhone %>
+    <%= form.number_field :advisorPhone, id: :advisor_advisorPhone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :advisorEmail %>
+    <%= form.text_field :advisorEmail, id: :advisor_advisorEmail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :advisorRoom %>
+    <%= form.text_field :advisorRoom, id: :advisor_advisorRoom %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

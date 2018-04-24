@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Leaseduration:</strong>
+  <%= @lease.leaseDuration %>
+</p>
+
+<p>
+  <strong>Leasecity:</strong>
+  <%= @lease.leaseCity %>
+</p>
+
+<p>
+  <strong>Leasestreet:</strong>
+  <%= @lease.leaseStreet %>
+</p>
+
+<p>
+  <strong>Leasezip:</strong>
+  <%= @lease.leaseZip %>
+</p>
+
+<p>
+  <strong>Leasestart:</strong>
+  <%= @lease.leaseStart %>
+</p>
+
+<p>
+  <strong>Leaseend:</strong>
+  <%= @lease.leaseEnd %>
+</p>
+
+<p>
+  <strong>Studentid:</strong>
+  <%= @lease.studentID %>
+</p>
+
+<p>
+  <strong>Invoiceid:</strong>
+  <%= @lease.invoiceID %>
+</p>
+
+<%= link_to 'Edit', edit_lease_path(@lease) %> |
+<%= link_to 'Back', leases_path %>

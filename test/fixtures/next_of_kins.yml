@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nextFname: MyString
+  nextLname: MyString
+  nextRelationship: MyString
+  nextStreet: MyString
+  nextCity: MyString
+  nextZip: 1
+  nextPhone: 1
+
+two:
+  nextFname: MyString
+  nextLname: MyString
+  nextRelationship: MyString
+  nextStreet: MyString
+  nextCity: MyString
+  nextZip: 1
+  nextPhone: 1
