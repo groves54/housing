@@ -17,7 +17,7 @@ class RoomsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create room" do
     assert_difference('Room.count') do
-      post rooms_url, params: { room: { apartmentID: @room.apartmentID, hallName: @room.hallName, roomAvailability: @room.roomAvailability, roomNumber: @room.roomNumber, roomPlace: @room.roomPlace, roomRent: @room.roomRent } }
+      post rooms_url, params: { room: {apartmentID: @room.apartmentID, hallID: @room.hallName, roomAvailability: @room.roomAvailability, roomNumber: @room.roomNumber, roomPlace: @room.roomPlace, roomRent: @room.roomRent } }
     end
 
     assert_redirected_to room_url(Room.last)
@@ -34,7 +34,7 @@ class RoomsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update room" do
-    patch room_url(@room), params: { room: { apartmentID: @room.apartmentID, hallName: @room.hallName, roomAvailability: @room.roomAvailability, roomNumber: @room.roomNumber, roomPlace: @room.roomPlace, roomRent: @room.roomRent } }
+    patch room_url(@room), params: { room: {apartmentID: @room.apartmentID, hallID: @room.hallName, roomAvailability: @room.roomAvailability, roomNumber: @room.roomNumber, roomPlace: @room.roomPlace, roomRent: @room.roomRent } }
     assert_redirected_to room_url(@room)
   end
 

@@ -17,7 +17,7 @@ class HallsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create hall" do
     assert_difference('Hall.count') do
-      post halls_url, params: { hall: { hallCity: @hall.hallCity, hallName: @hall.hallName, hallPhone: @hall.hallPhone, hallStreet: @hall.hallStreet, hallZip: @hall.hallZip, managerID: @hall.managerID } }
+      post halls_url, params: { hall: {hallCity: @hall.hallCity, hallID: @hall.hallName, hallPhone: @hall.hallPhone, hallStreet: @hall.hallStreet, hallZip: @hall.hallZip, managerID: @hall.managerID } }
     end
 
     assert_redirected_to hall_url(Hall.last)
@@ -34,7 +34,7 @@ class HallsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update hall" do
-    patch hall_url(@hall), params: { hall: { hallCity: @hall.hallCity, hallName: @hall.hallName, hallPhone: @hall.hallPhone, hallStreet: @hall.hallStreet, hallZip: @hall.hallZip, managerID: @hall.managerID } }
+    patch hall_url(@hall), params: { hall: {hallCity: @hall.hallCity, hallID: @hall.hallName, hallPhone: @hall.hallPhone, hallStreet: @hall.hallStreet, hallZip: @hall.hallZip, managerID: @hall.managerID } }
     assert_redirected_to hall_url(@hall)
   end
 

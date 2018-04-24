@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   resources :payments
   resources :invoices
   resources :staffs
@@ -34,6 +35,24 @@ Rails.application.routes.draw do
   get '/staff', to: 'staffs#index'
   get '/invoice', to: 'invoices#index'
   get '/payment', to: 'payments#index'
+
+  # query routes
+  get '/query', to: 'query#index'
+  get 'query/query1'
+  get 'query/query2'
+  get 'query/query3'
+  get 'query/query4'
+  get 'query/query5'
+  get 'query/query6'
+  get 'query/query7'
+  get 'query/query8'
+  get 'query/query9'
+  get 'query/query10'
+  get 'query/query11'
+  get 'query/query12'
+  get 'query/query13'
+  get 'query/query14'
+  get 'query/query15'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
